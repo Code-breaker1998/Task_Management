@@ -1,0 +1,23 @@
+package com.example.task.controller;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+
+import com.example.task.entity.Task;
+
+@Controller
+
+public class TaskController {
+
+	@GetMapping("/task/create")
+	public ResponseEntity<Task> createTask(String email,String taskname){
+		newTask(email,taskname);
+	}
+	
+	@PostMapping("/task/create")
+	public ResponseEntity<Task> newTask(String email,String taskname){
+		
+	}
+}

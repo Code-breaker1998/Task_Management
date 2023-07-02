@@ -1,0 +1,13 @@
+package com.example.task.dto;
+
+public class ProgramListDTO {
+	  private List<Program> programList;
+
+	  public List<Program> getProgramList() {
+	    return programList;
+	  }
+
+	  public void setProgramList(List<Program> programList) {
+	    this.programList = programList;
+	  }
+	}
